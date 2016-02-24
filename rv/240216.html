@@ -24,7 +24,7 @@
       renderer.setSize( window.innerWidth, window.innerHeight);
       document.body.appendChild(renderer.domElement);
     
-      var forma= new THREE.SphereGeometry(5,6);
+      var forma= new THREE.SphereGeometry(1);
       var material =  new THREE.MeshBasicMaterial({color:0x00ff00);
       var esfera = new THREE.Mesh(forma,material);
       escena.add(esfera);
