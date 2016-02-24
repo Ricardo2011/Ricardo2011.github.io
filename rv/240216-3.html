@@ -25,15 +25,15 @@
       document.body.appendChild(renderer.domElement);
     
       var forma= new THREE.TorusGeometry(10,5);
-      var material =  new THREE.MeshBasicMaterial({color:0x0000ff});
+      var material =  new THREE.MeshBasicMaterial({color:0x00ff00);
       var anillo = new THREE.Mesh(forma,material);
       escena.add(anillo);
       
       function render(){
         requestAnimationFrame(render);
         renderer.render(escena,camara);
-        anillo.rotation.x += 0.1;
-        anillo.rotation.y += 0.1;
+        //anillo.rotation.x += 0.1;
+        //anillo.rotation.y += 0.1;
       }
       render();
     </script>
