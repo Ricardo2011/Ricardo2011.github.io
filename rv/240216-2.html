@@ -13,7 +13,7 @@
     <script src="three.min.js"></script>
     <script>
       var escena=new THREE.Scene();
-      var fov = 100;//Campo de vision
+      var fov = 2000;//Campo de vision
       var aspect = window.innerWidth / window.innerHeight;
       var near = 0.2;//Plano cercano
       var far = 100;
@@ -25,7 +25,7 @@
       document.body.appendChild(renderer.domElement);
     
       var forma= new THREE.CylinderGeometry(1,1,5);
-      var material =  new THREE.MeshBasicMaterial({color:0x00ff00});
+      var material =  new THREE.MeshBasicMaterial({color:0xff0000});
       var cilindro = new THREE.Mesh(forma,material);
       escena.add(cilindro);
       
