@@ -24,7 +24,7 @@
       renderer.setSize( window.innerWidth, window.innerHeight);
       document.body.appendChild(renderer.domElement);
     
-      var forma= new THREE.TorusGeometry(10,5);
+      var forma= new THREE.TorusGeometry(5,6);
       var material =  new THREE.MeshBasicMaterial({color:0x00ff00);
       var anillo = new THREE.Mesh(forma,material);
       escena.add(anillo);
