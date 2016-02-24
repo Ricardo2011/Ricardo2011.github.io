@@ -25,15 +25,15 @@
       document.body.appendChild(renderer.domElement);
     
       var forma= new THREE.SphereGeometry(1);
-      var material =  new THREE.MeshDepthMaterial({color:0x0000ff});
+      var material =  new THREE.MeshNormalMaterial({color:0x0000ff});
       var esfera = new THREE.Mesh(forma,material);
       escena.add(esfera);
       
       function render(){
         requestAnimationFrame(render);
         renderer.render(escena,camara);
-        esfera.rotation.x += 0.1;
-        esfera.rotation.y += 0.1;
+        //esfera.rotation.x += 0.1;
+        //esfera.rotation.y += 0.1;
       }
       render();
     </script>
