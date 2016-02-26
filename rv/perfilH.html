@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Perfil H</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+      body{ margin: 0; }
+      canvas{ width:100%; height:100%; }
+    </style>
+  </head>
+  
+  <body>
+    <script src="three.min.js"></script>
+    <script>
+      var camara, escena, renderer;
+      
+      escena = new THREE.Scene();
+      camara = new THREE.PerspectiveCamera(45, window.innerWidth/window.innerHeight, 1, 1000;
+      renderer = new THREE.WebGLRenderer();
+      renderer.setSize( window.innerWidth, window.innerHeight);
+      document.body.appendChild(renderer.domElement);
+    
+      var figura= new THREE.Shape();
+      //las figuras se realizan sobre el plano y
+      figura.moveTo(0,0);
+      figura.lineTo(0,10);
+      figura.lineTo(10,10);
+      figura.lineTo(10,6);
+      figura.lineTo(15,6);
+      figura.lineTo(15,10);
+      figura.lineTo(20,10);
+      figura.lineTo(20,0);
+      figura.lineTo(15,0);
+      figura.lineTo(15,4);
+      figura.lineTo(10,4);
+      figura.lineTo(10,0);
+      figura.lineTo(0,0);
+      
+    
+      //para generar la mmala hay que desarrollar la forma
+      var forma=new THREE.ExtrudeGeometry(figura,{amount:10});
+      var malla =  new THREE.Mesh(forma);
+      escena.add(malla)
+      
+      function loop(){
+        requestAnimationFrame(loop)
+        malla.rotation.x += 0.01;
+        malla.rotation.y += 0.01;
+        renderer.render(escena,camara);
+      }
+      
+      loop();
+    </script>
+  </body>
+</html>
+
+    Status API Training Shop Blog About Pricing 
+
+    © 2016 GitHub, Inc. Terms Privacy Se
