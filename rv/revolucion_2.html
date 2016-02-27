@@ -22,12 +22,12 @@
     
       //las figuras se realizan sobre el plano y
       var puntos = [];
-     // puntos.push (new THREE.Vector2(0,0) );
-      //puntos.push (new THREE.Vector2(10,10) );
-      //puntos.push (new THREE.Vector2(20,20)) );
-      for (var i = 0; i<50 ; i++){
-         puntos.push(new.THREE.Vector2(Math.sin(i*0.2)*15+50,(i-5)*2));
-       }
+      puntos.push (new THREE.Vector2(0,0) );
+      puntos.push (new THREE.Vector2(10,10) );
+      puntos.push (new THREE.Vector2(20,20) );
+      //for (var i = 0; i<50 ; i++){
+      //   puntos.push(new.THREE.Vector2(Math.sin(i*0.2)*15+50,(i-5)*2));
+      // }
       //para generar la mmala hay que desarrollar la forma
       var forma=new THREE.LatheGeometry(puntos);//la revolucion se hace en z
       
