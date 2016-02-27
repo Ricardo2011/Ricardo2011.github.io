@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>Uso de extrucciones</title>
+    <title>Extruido1</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <style>
       body{ margin: 0; }
@@ -12,11 +12,10 @@
   <body>
     <script src="three.min.js"></script>
     <script>
-      var camara,escena,renderer;
-      
-      escena=new THREE.Scene();
-      camara = new THREE.PerspectiveCamera(45, window.innerWidth/window.innerHeight,1, 1000;
-      renderer = new THREE.WebGLRenderer();
+      var escena=new THREE.Scene();
+      var camara = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 100);
+      //camara.position.z = 5;
+      var renderer = new THREE.WebGLRenderer();
       renderer.setSize( window.innerWidth, window.innerHeight);
       document.body.appendChild(renderer.domElement);
     
@@ -26,9 +25,8 @@
       figura.lineTo(10,40);
       figura.lineTo(40,40);
       figura.lineTo(10,10);
-    
       //para generar la mmala hay que desarrollar la forma
-      var forma=new THREE.ExtrudeGeometry(figura,{amount:10});
+      var forma =  new THREE.ExtrudeGeometry(figura,{amount:10});
       var malla =  new THREE.Mesh(forma);
       escena.add(malla)
       
