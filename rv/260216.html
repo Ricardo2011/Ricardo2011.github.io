@@ -41,7 +41,8 @@
       figura.lineTo(0,0);
       
       //para generar la mmala hay que desarrollar la forma
-      var forma =  new THREE.ShapeGeometry(figura);
+      //var forma =  new THREE.ShapeGeometry(figura);
+      var forma =  new THREE.ExtrudeGeometry(figura);
       var malla =  new THREE.Mesh(forma);
       escena.add(malla)
       
