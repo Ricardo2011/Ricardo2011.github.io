@@ -6,7 +6,7 @@ function setup(){
   escena = new THREE.Scene();
   escena.add(malla);
   
-  camara = nwe THREE.PerspectiveCamera();
+  camara = new THREE.PerspectiveCamera();
   camara.position.z = 5;
   
   renderer = new THREE.WebGlRenderer();
