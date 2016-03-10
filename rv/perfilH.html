@@ -12,10 +12,15 @@
   <body>
     <script src="three.min.js"></script>
     <script>
-      var camara, escena, renderer;
       
-      escena = new THREE.Scene();
-      camara = new THREE.PerspectiveCamera(45, window.innerWidth/window.innerHeight, 1, 1000);
+      var escena = new THREE.Scene();
+      var fov = 75;
+      var aspect= window.innerWidth/window.innerHeight
+      var near= 0.1;
+      var far = 1000;
+      var camara = new THREE.PerspectiveCamera(fov, aspect, near, far);
+      camara.position.z = 80;
+      
       renderer = new THREE.WebGLRenderer();
       renderer.setSize( window.innerWidth, window.innerHeight);
       document.body.appendChild(renderer.domElement);
@@ -38,7 +43,7 @@
       
     
       //para generar la mmala hay que desarrollar la forma
-      var forma=new THREE.ExtrudeGeometry(figura,{amount:10});
+      var forma=new THREE.ExtrudeGeometry(figura,{amount:.5});
       var malla =  new THREE.Mesh(forma);
       escena.add(malla)
       
