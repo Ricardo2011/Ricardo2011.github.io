@@ -31,8 +31,11 @@ THREE.ImageUtils.crossOrigin='';
  var forma2 = new THREE.CylinderGeometry( 2, 2, 1, 10 );
  var material2 = new THREE.MeshBasicMaterial( {map: textura2} );
  var llanta2 = new THREE.Mesh( forma2, material2 );
+ 
+ //var material3 = new THREE.MeshBasicMaterial({map:textura1});
+ arriba = new Tapa();
+ var arriba1 = new THREE.Mesh(arriba, material1);
 //POSICIONES DE LOS ELEMENTOS
-arriba = new Tapa();
 abajo.position.z=-1;
 llanta1.rotation.z=1.57;
 llanta1.position.z=-1;
@@ -42,7 +45,7 @@ llanta2.position.z=-1;
 llanta2.position.x=3.5;
 
 escena=new THREE.Scene();
-escena.add(arriba);
+escena.add(arriba1);
 escena.add(abajo);
 escena.add(llanta1);
 escena.add(llanta2);
