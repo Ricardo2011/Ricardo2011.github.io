@@ -7,7 +7,7 @@ THREE.ImageUtils.crossOrigin='';
  var abajo = new THREE.Mesh(forma1, material1);*/
 
  //var textura2 = THREE.ImageUtils.loadTexture('http://i39.servimg.com/u/f39/16/68/03/45/810.jpg');
-var forma = new THREE.CylinderGeometry( 5, 5, 20, 32 );
+var forma = new THREE.CylinderGeometry( 2, 2, 1, 10 );
 var material = new THREE.MeshBasicMaterial( {color: 0x00ff00} );
 var llanta1 = new THREE.Mesh( forma, material );
 //POSICIONES DE LOS ELEMENTOS
