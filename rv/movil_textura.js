@@ -8,8 +8,8 @@ THREE.ImageUtils.crossOrigin='';
 
  //var textura2 = THREE.ImageUtils.loadTexture('http://i39.servimg.com/u/f39/16/68/03/45/810.jpg');
  //var material2 = new THREE.MeshBasicMaterial();
- var forma2 = new THREE.Mesh(new THREE.CylinderGeometry(2,2,1,10));
- var llanta1 = new THREE.Mesh(forma2);
+ //var forma2 = new THREE.Mesh(new THREE.CylinderGeometry(2,2,1,10));
+ var llanta1 = new THREE.Mesh(new THREE.CylinderGeometry(2,2,1,10));
 
 //POSICIONES DE LOS ELEMENTOS
 //abajo.position.z=-1;
