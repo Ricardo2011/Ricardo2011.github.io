@@ -17,9 +17,9 @@ Tapa.prototype=new THREE.Object3D();
 function setup(){
 THREE.ImageUtils.crossOrigin='';
 var textura1 = THREE.ImageUtils.loadTexture('http://threejs.org/examples/textures/crate.gif');
-var geometria1= new THREE.Mesh(new THREE.BoxGeometry(6,6,1));
+var forma1= new THREE.Mesh(new THREE.BoxGeometry(6,6,1));
 var material1= new THREE.MeshBasicMaterial({map:textura1});
-var abajo = new THREE.Mesh(forma, material);
+var abajo = new THREE.Mesh(forma1, material1);
 //var llanta1=new THREE.Mesh(new THREE.CylinderGeometry(2,2,1,10));
 //var llanta2=new THREE.Mesh(new THREE.CylinderGeometry(2,2,1,10));
 
