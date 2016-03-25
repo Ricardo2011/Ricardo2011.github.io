@@ -1,10 +1,15 @@
 function setup(){
 THREE.ImageUtils.crossOrigin='';
- 
+//TEXTURAS 
  var textura1 = THREE.ImageUtils.loadTexture('http://i39.servimg.com/u/f39/16/68/03/45/810.jpg');
  var material1 = new THREE.MeshBasicMaterial({map:textura1});
  var forma1 = new THREE.BoxGeometry(6,6,1);
  var abajo = new THREE.Mesh(forma1, material1);
+
+
+//POSICIONES DE LOS ELEMENTOS
+abajo.position.z=-1;
+
 
 escena=new THREE.Scene();
 escena.add(abajo);
