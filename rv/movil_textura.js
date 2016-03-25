@@ -7,7 +7,7 @@ var textura3 = THREE.ImageUtils.loadTexture('http://i39.servimg.com/u/f39/16/68/
 //var textura4 = THREE.ImageUtils.loadTexture('http://i39.servimg.com/u/f39/16/68/03/45/810.jpg');
 
 this.canon=new THREE.Mesh(new THREE.BoxGeometry(4,4,1), new THREE.MeshBasicMaterial({map: textura3}));
-this.sujetador=new THREE.Mesh(new THREE.BoxGeometry(1,6,1));
+this.sujetador=new THREE.Mesh(new THREE.BoxGeometry(1,6,1), new THREE.MeshBasicMaterial({map: textura3}));
 
 this.canon.position.y=0;
 this.sujetador.position.y=3;
