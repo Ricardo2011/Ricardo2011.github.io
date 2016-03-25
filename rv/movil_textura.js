@@ -12,7 +12,7 @@ var material = new THREE.MeshBasicMaterial( {color: 0x00ff00} );
 var llanta1 = new THREE.Mesh( forma, material );
 //POSICIONES DE LOS ELEMENTOS
 //abajo.position.z=-1;
-//llanta1.rotation.z=1.57;
+llanta1.rotation.z=1.57;
 //llanta1.position.z=-1;
 //llanta1.position.x=-3.5
 
