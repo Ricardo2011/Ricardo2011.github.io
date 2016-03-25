@@ -3,7 +3,7 @@ function Tapa(){
 THREE.Object3D.call(this);
 THREE.ImageUtils.crossOrigin='';
 
-var textura3 = THREE.ImageUtils.loadTexture('http://us.123rf.com/450wm/bupu/bupu1404/bupu140400005/27134439-white-star-on-green-metal.jpg');
+var textura3 = THREE.ImageUtils.loadTexture('http://i39.servimg.com/u/f39/16/68/03/45/810.jpg');
 //var textura4 = THREE.ImageUtils.loadTexture('http://i39.servimg.com/u/f39/16/68/03/45/810.jpg');
 
 this.canon=new THREE.Mesh(new THREE.BoxGeometry(4,4,1), new THREE.MeshBasicMaterial({map: textura3}));
