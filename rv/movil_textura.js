@@ -17,7 +17,7 @@ Tapa.prototype=new THREE.Object3D();
 
 function setup(){
 
-THREE.ImageUtils.crossOrigin
+THREE.ImageUtils.crossOrigin='';
 var textura = new THREE.ImageUtils.loadTexture('http://threejs.org/examples/textures/brick_diffuse.jpg') ;
 
 var abajo=new THREE.Mesh(new THREE.BoxGeometry(6,6,1),new THREE.MeshBasicMaterial({map:textura});
