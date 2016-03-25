@@ -7,18 +7,17 @@ THREE.ImageUtils.crossOrigin='';
  var abajo = new THREE.Mesh(forma1, material1);*/
 
  //var textura2 = THREE.ImageUtils.loadTexture('http://i39.servimg.com/u/f39/16/68/03/45/810.jpg');
- var material2 = new THREE.MeshBasicMaterial({color: 0x00ff00});
- var forma2 = new THREE.Mesh(new THREE.CylinderGeometry(2,2,1,10));
- var llanta1 = new THREE.Mesh( forma2, material2);
-
+var geometry = new THREE.CylinderGeometry( 5, 5, 20, 32 );
+var material = new THREE.MeshBasicMaterial( {color: 0xffff00} );
+var cylinder = new THREE.Mesh( geometry, material );
 //POSICIONES DE LOS ELEMENTOS
 //abajo.position.z=-1;
-llanta1.rotation.z=1.57;
-llanta1.position.z=-1;
-llanta1.position.x=-3.5
+//llanta1.rotation.z=1.57;
+//llanta1.position.z=-1;
+//llanta1.position.x=-3.5
 
 escena=new THREE.Scene();
-escena.add(llanta1);
+escena.add(cylinder);
 
 camara=new THREE.PerspectiveCamera();
 camara.position.z=20;
