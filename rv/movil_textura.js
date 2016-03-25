@@ -10,16 +10,24 @@ THREE.ImageUtils.crossOrigin='';
  var forma = new THREE.CylinderGeometry( 2, 2, 1, 10 );
  var material = new THREE.MeshBasicMaterial( {map: textura} );
  var llanta1 = new THREE.Mesh( forma, material );
+ 
+ var textura2 = THREE.ImageUtils.loadTexture('http://thumbs.dreamstime.com/t/sandstone-texture-10289057.jpg');
+ var forma2 = new THREE.CylinderGeometry( 2, 2, 1, 10 );
+ var material2 = new THREE.MeshBasicMaterial( {map: textura2} );
+ var llanta2 = new THREE.Mesh( forma2, material2 );
 //POSICIONES DE LOS ELEMENTOS
 abajo.position.z=-1;
 llanta1.rotation.z=1.57;
 llanta1.position.z=-1;
 llanta1.position.x=-3.5
+llanta2.rotation.z=1.57;
+llanta2.position.z=-1;
+llanta2.position.x=3.5;
 
 escena=new THREE.Scene();
 escena.add(abajo);
 escena.add(llanta1);
-
+escena.add(llanta2);
 camara=new THREE.PerspectiveCamera();
 camara.position.z=20;
 camara.position.x=2;
