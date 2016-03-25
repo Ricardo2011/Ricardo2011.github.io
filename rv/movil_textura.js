@@ -17,14 +17,14 @@ Tapa.prototype=new THREE.Object3D();
 function setup(){
 THREE.ImageUtils.crossOrigin='';
 var textura1 = THREE.ImageUtils.loadTexture('http://threejs.org/examples/textures/crate.gif');
-var forma1= new THREE.Mesh(new THREE.BoxGeometry(6,6,1));
+var forma1= new THREE.Mesh(new THREE.BoxGeometry(1,1,1));
 var material1= new THREE.MeshBasicMaterial({map:textura1});
 var abajo = new THREE.Mesh(forma1, material1);
 //var llanta1=new THREE.Mesh(new THREE.CylinderGeometry(2,2,1,10));
 //var llanta2=new THREE.Mesh(new THREE.CylinderGeometry(2,2,1,10));
 
 //arriba=new Tapa();
-abajo.position.z=-1;
+//abajo.position.z=-1;
 //llanta1.rotation.z=1.57;
 //llanta2.rotation.z=1.57;
 //llanta1.position.z=-1;
@@ -39,9 +39,10 @@ escena.add(abajo);
 //escena.add(llanta2);
 
 camara=new THREE.PerspectiveCamera();
-camara.position.z=20;
-camara.position.x=2;
-camara.position.y=5;
+camara.position.z=5;
+//camara.position.z=20;
+//camara.position.x=2;
+//camara.position.y=5;
 
 renderer=new THREE.WebGLRenderer();
 renderer.setSize(window.innerHeight*.95,window.innerHeight*.95);
