@@ -17,7 +17,7 @@ llanta1.position.z=-1;
 llanta1.position.x=-3.5
 
 escena=new THREE.Scene();
-escena.add(llanta1);
+escena.add(abajo);
 escena.add(llanta1);
 
 camara=new THREE.PerspectiveCamera();
