@@ -1,3 +1,19 @@
+function Tapa(){
+
+THREE.Object3D.call(this);
+
+this.canon=new THREE.Mesh(new THREE.BoxGeometry(4,4,1));
+this.sujetador=new THREE.Mesh(new THREE.BoxGeometry(1,6,1));
+
+this.canon.position.y=0;
+this.sujetador.position.y=3;
+
+this.add(this.canon);
+this.add(this.sujetador);
+}
+
+Tapa.prototype=new THREE.Object3D();
+
 function setup(){
 THREE.ImageUtils.crossOrigin='';
 //TEXTURAS 
@@ -16,6 +32,7 @@ THREE.ImageUtils.crossOrigin='';
  var material2 = new THREE.MeshBasicMaterial( {map: textura2} );
  var llanta2 = new THREE.Mesh( forma2, material2 );
 //POSICIONES DE LOS ELEMENTOS
+arriba = new Tapa();
 abajo.position.z=-1;
 llanta1.rotation.z=1.57;
 llanta1.position.z=-1;
@@ -25,6 +42,7 @@ llanta2.position.z=-1;
 llanta2.position.x=3.5;
 
 escena=new THREE.Scene();
+escena.add(arriba);
 escena.add(abajo);
 escena.add(llanta1);
 escena.add(llanta2);
