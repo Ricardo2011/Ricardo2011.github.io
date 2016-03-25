@@ -20,7 +20,7 @@ function setup(){
 THREE.ImageUtils.crossOrigin='';
 var textura = new THREE.ImageUtils.loadTexture('http://threejs.org/examples/textures/crate.gif') ;
 
-var abajo=new THREE.Mesh(new THREE.BoxGeometry(6,6,1),new THREE.MeshBasicMaterial({map:textura}));
+var abajo=new THREE.Mesh(new THREE.BoxGeometry(6,6,1),new THREE.MeshLambertMaterial({map:textura}));
 var llanta1=new THREE.Mesh(new THREE.CylinderGeometry(2,2,1,10),new THREE.MeshLambertMaterial({color:'#ffffff'}));
 var llanta2=new THREE.Mesh(new THREE.CylinderGeometry(2,2,1,10),new THREE.MeshLambertMaterial({color:'#ffffff'}));
 
