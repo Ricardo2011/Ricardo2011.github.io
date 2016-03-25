@@ -1,22 +1,23 @@
 function setup(){
 THREE.ImageUtils.crossOrigin='';
 //TEXTURAS 
-/* var textura1 = THREE.ImageUtils.loadTexture('http://i39.servimg.com/u/f39/16/68/03/45/810.jpg');
+ var textura1 = THREE.ImageUtils.loadTexture('http://i39.servimg.com/u/f39/16/68/03/45/810.jpg');
  var material1 = new THREE.MeshBasicMaterial({map:textura1});
  var forma1 = new THREE.BoxGeometry(6,6,1);
- var abajo = new THREE.Mesh(forma1, material1);*/
+ var abajo = new THREE.Mesh(forma1, material1);
 
-var textura = THREE.ImageUtils.loadTexture('http://thumbs.dreamstime.com/t/sandstone-texture-10289057.jpg');
-var forma = new THREE.CylinderGeometry( 2, 2, 1, 10 );
-var material = new THREE.MeshBasicMaterial( {map: textura} );
-var llanta1 = new THREE.Mesh( forma, material );
+ var textura = THREE.ImageUtils.loadTexture('http://thumbs.dreamstime.com/t/sandstone-texture-10289057.jpg');
+ var forma = new THREE.CylinderGeometry( 2, 2, 1, 10 );
+ var material = new THREE.MeshBasicMaterial( {map: textura} );
+ var llanta1 = new THREE.Mesh( forma, material );
 //POSICIONES DE LOS ELEMENTOS
-//abajo.position.z=-1;
+abajo.position.z=-1;
 llanta1.rotation.z=1.57;
 llanta1.position.z=-1;
 llanta1.position.x=-3.5
 
 escena=new THREE.Scene();
+escena.add(llanta1);
 escena.add(llanta1);
 
 camara=new THREE.PerspectiveCamera();
