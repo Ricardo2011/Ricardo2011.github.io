@@ -2,7 +2,7 @@ function Tapa(){
 
 THREE.Object3D.call(this);
 
-this.canon=new THREE.Mesh(new THREE.BoxGeometry(4,4,1));
+this.canon=new THREE.Mesh(new THREE.BoxGeometry(4,4,1), new THREE.MeshBasicMaterial({color: 0xffff00}));
 this.sujetador=new THREE.Mesh(new THREE.BoxGeometry(1,6,1));
 
 this.canon.position.y=0;
