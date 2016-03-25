@@ -1,10 +1,10 @@
 function Tapa(){
 
 THREE.Object3D.call(this);
-THREE.ImageUtils.crossOrigin='';
 
-this.canon=new THREE.Mesh(new THREE.BoxGeometry(4,4,1),new THREE.MeshLambertMaterial({color:'#ffffff'})),new THREE.ImageUtils.loadTexture('http://threejs.org/examples/textures/brick_diffuse.jpg') ;
-this.sujetador=new THREE.Mesh(new THREE.BoxGeometry(1,6,1),new THREE.MeshLambertMaterial({color:'#ffffff'})),new THREE.ImageUtils.loadTexture('http://threejs.org/examples/textures/brick_diffuse.jpg');
+
+this.canon=new THREE.Mesh(new THREE.BoxGeometry(4,4,1),new THREE.MeshLambertMaterial({color:'#ffffff'}));
+this.sujetador=new THREE.Mesh(new THREE.BoxGeometry(1,6,1),new THREE.MeshLambertMaterial({color:'#ffffff'}));
 
 this.canon.position.y=0;
 this.sujetador.position.y=3;
@@ -16,9 +16,14 @@ this.add(this.sujetador);
 Tapa.prototype=new THREE.Object3D();
 
 function setup(){
+
+THREE.ImageUtils.crossOrigin='';
+
 var abajo=new THREE.Mesh(new THREE.BoxGeometry(6,6,1),new THREE.MeshLambertMaterial({color:'#ffffff'}));
 var llanta1=new THREE.Mesh(new THREE.CylinderGeometry(2,2,1,10),new THREE.MeshLambertMaterial({color:'#ffffff'}));
 var llanta2=new THREE.Mesh(new THREE.CylinderGeometry(2,2,1,10),new THREE.MeshLambertMaterial({color:'#ffffff'}));
+
+var textura = new THREE.ImageUtils.loadTexture('http://threejs.org/examples/textures/brick_diffuse.jpg') ;
 
 arriba=new Tapa();
 
@@ -64,7 +69,7 @@ arriba.rotation.z+=step;
 }
 
 var escena,camara,renderer;
-var step,arriba;
+var step,arriba,textura;
 
 setup();
 loop();
