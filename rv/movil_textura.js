@@ -46,6 +46,8 @@ llanta2.rotation.z=1.57;
 llanta2.position.z=-1;
 llanta2.position.x=3.5;
 
+step=.01;
+
 escena=new THREE.Scene();
 escena.add(arriba);
 escena.add(abajo);
@@ -64,6 +66,11 @@ document.body.appendChild(renderer.domElement);
 function loop(){
 requestAnimationFrame(loop);
 renderer.render(escena,camara);
+
+if(Math.abs(arriba.rotation.z)>.4)
+step=-step;
+
+arriba.rotation.z+=step;
 }
 
 var escena,camara,renderer;
