@@ -17,13 +17,12 @@ Tapa.prototype=new THREE.Object3D();
 
 function setup(){
 
-THREE.ImageUtils.crossOrigin='';
+THREE.ImageUtils.crossOrigin
+var textura = new THREE.ImageUtils.loadTexture('http://threejs.org/examples/textures/brick_diffuse.jpg') ;
 
-var abajo=new THREE.Mesh(new THREE.BoxGeometry(6,6,1),new THREE.MeshLambertMaterial({color:'#ffffff'}));
+var abajo=new THREE.Mesh(new THREE.BoxGeometry(6,6,1),new THREE.MeshBasicMaterial({map:textura});
 var llanta1=new THREE.Mesh(new THREE.CylinderGeometry(2,2,1,10),new THREE.MeshLambertMaterial({color:'#ffffff'}));
 var llanta2=new THREE.Mesh(new THREE.CylinderGeometry(2,2,1,10),new THREE.MeshLambertMaterial({color:'#ffffff'}));
-
-var textura = new THREE.ImageUtils.loadTexture('http://threejs.org/examples/textures/brick_diffuse.jpg') ;
 
 arriba=new Tapa();
 
