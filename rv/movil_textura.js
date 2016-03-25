@@ -6,7 +6,7 @@ THREE.ImageUtils.crossOrigin='';
  var forma1 = new THREE.BoxGeometry(6,6,1);
  var abajo = new THREE.Mesh(forma1, material1);
 
- var textura = THREE.ImageUtils.loadTexture('http://thumbs.dreamstime.com/t/sandstone-texture-10289057.jpg');
+ var textura = THREE.ImageUtils.loadTexture('http://st2.depositphotos.com/1008851/7827/v/450/depositphotos_78277008-Grunge-tire-track.jpg');
  var forma = new THREE.CylinderGeometry( 2, 2, 1, 10 );
  var material = new THREE.MeshBasicMaterial( {map: textura} );
  var llanta1 = new THREE.Mesh( forma, material );
