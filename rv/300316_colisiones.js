@@ -5,7 +5,7 @@ function setup(){
   cubo1.position.x = 0.7;
   cubo2.position.x= -0.7;
   
-  camra = new THREE.PerspectiveCamera();
+  camara = new THREE.PerspectiveCamera();
   camara.position.z = 5;
   
   raycaster = new THREE.Raycaster();
