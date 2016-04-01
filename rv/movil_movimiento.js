@@ -62,8 +62,8 @@ renderer=new THREE.WebGLRenderer();
 renderer.setSize(window.innerHeight*.95,window.innerHeight*.95);
 document.body.appendChild(renderer.domElement);
 
-var clock=new THREE.Clock();
-var controls=new THREE.FirstPersonControls(camara);
+clock=new THREE.Clock();
+controls=new THREE.FirstPersonControls(camara);
 controls.movementSpeed=10;
 controls.lookSpeed=0.05;
 controls.noFly=true;
@@ -84,6 +84,7 @@ arriba.rotation.z+=step;
 
 var escena,camara,renderer;
 var step,arriba;
+var clock,controls;
 
 setup();
 loop();
