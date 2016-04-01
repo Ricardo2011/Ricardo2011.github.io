@@ -63,7 +63,7 @@ renderer.setSize(window.innerHeight*.95,window.innerHeight*.95);
 document.body.appendChild(renderer.domElement);
 
 clock=new THREE.Clock();
-controls=new THREE.FirstPersonControls(abajo);
+controls=new THREE.FirstPersonControls(arriba);
 controls.movementSpeed=10;
 controls.lookSpeed=0.05;
 controls.noFly=true;
