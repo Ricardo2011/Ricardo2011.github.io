@@ -40,6 +40,7 @@ this.llanta2.position.z=-1;
 this.llanta2.position.x=3.5;
 
 this.add(this.abajo);
+this.add(this.llanta1);
 this.add(this.llanta2);
 }
 
