@@ -29,7 +29,7 @@ var textura = THREE.ImageUtils.loadTexture('http://thumbs.dreamstime.com/t/sands
 
 this.abajo=new THREE.Mesh(new THREE.BoxGeometry(4,4,1), new THREE.MeshBasicMaterial({map: textura1}));
 this.llanta1=new THREE.Mesh(new THREE.CylinderGeometry( 2, 2, 1, 10 ), new THREE.MeshBasicMaterial({map: textura}));
-this.llanta=new THREE.Mesh(new THREE.CylinderGeometry( 2, 2, 1, 10 ), new THREE.MeshBasicMaterial({map: textura}));
+this.llanta2=new THREE.Mesh(new THREE.CylinderGeometry( 2, 2, 1, 10 ), new THREE.MeshBasicMaterial({map: textura}));
 
 this.abajo.position.z=-1;
 this.llanta1.rotation.z=1.57;
@@ -40,7 +40,7 @@ this.llanta2.position.z=-1;
 this.llanta2.position.x=3.5;
 
 this.add(this.abajo);
-this.add(this.llanta);
+this.add(this.llanta2);
 }
 
 Abajo.prototype=new THREE.Object3D();
