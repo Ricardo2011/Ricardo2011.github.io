@@ -27,7 +27,7 @@ var textura1 = THREE.ImageUtils.loadTexture('http://i39.servimg.com/u/f39/16/68/
 var textura = THREE.ImageUtils.loadTexture('http://thumbs.dreamstime.com/t/sandstone-texture-10289057.jpg');
 //var textura4 = THREE.ImageUtils.loadTexture('http://i39.servimg.com/u/f39/16/68/03/45/810.jpg');
 
-this.abajo=new THREE.Mesh(new THREE.BoxGeometry(4,4,1), new THREE.MeshBasicMaterial({map: textura1}));
+this.abajo=new THREE.Mesh(new THREE.BoxGeometry(6,6,1), new THREE.MeshBasicMaterial({map: textura1}));
 this.llanta1=new THREE.Mesh(new THREE.CylinderGeometry( 2, 2, 1, 10 ), new THREE.MeshBasicMaterial({map: textura}));
 this.llanta2=new THREE.Mesh(new THREE.CylinderGeometry( 2, 2, 1, 10 ), new THREE.MeshBasicMaterial({map: textura}));
 
