@@ -54,7 +54,7 @@ renderer.setSize(window.innerHeight*.95,window.innerHeight*.95);
 document.body.appendChild(renderer.domElement);
 
 	renderer.shadowMapEnabled = true;
-	malla.castShadow =true;
+	abajo.castShadow =true;
 	base.receiveShadow =true;
 	luzPuntual.castShadow = true;
 }
