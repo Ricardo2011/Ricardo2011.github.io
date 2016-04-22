@@ -19,7 +19,7 @@ var abajo=new THREE.Mesh(new THREE.BoxGeometry(6,6,1),new THREE.MeshPhongMateria
 var llanta1=new THREE.Mesh(new THREE.CylinderGeometry(2,2,1,10),new THREE.MeshPhongMaterial({color:'#00cc00'}));
 var llanta2=new THREE.Mesh(new THREE.CylinderGeometry(2,2,1,10),new THREE.MeshPhongMaterial({color:'#00cc00'}));
 
-var base = new THREE.Mesh(new THREE.BoxGeometry(10,10,.1), new THREE.MeshLambertMaterial({color: 0xFF00000}));
+var base = new THREE.Mesh(new THREE.BoxGeometry(10,10,.1), new THREE.MeshLambertMaterial({color: 0x00FF00}));
 
 arriba=new Tapa();
 base position.z=-1.5
