@@ -47,17 +47,17 @@ llanta1.position.x=-3.5;
 llanta2.position.x=3.5;
 step=.01;
 
-var luzPuntual=new THREE.PointLight(0xFFFFFF);
-luzPuntual.position.x=30;
-luzPuntual.position.y=30;
-luzPuntual.position.z=30;
+//var luzPuntual=new THREE.PointLight(0xFFFFFF);
+//luzPuntual.position.x=30;
+//luzPuntual.position.y=30;
+//luzPuntual.position.z=30;
 
 escena=new THREE.Scene();
 escena.add(arriba);
 escena.add(abajo);
 escena.add(llanta1);
 escena.add(llanta2);
-escena.add(luzPuntual);
+//escena.add(luzPuntual);
 escena.add(base);
 
 camara=new THREE.PerspectiveCamera();
@@ -68,12 +68,12 @@ camara.position.y=5;
 renderer=new THREE.WebGLRenderer();
 renderer.setSize(window.innerHeight*.95,window.innerHeight*.95);
 document.body.appendChild(renderer.domElement);
-
-	renderer.shadowMapEnabled = true;
-	abajo.castShadow =true;
-	llanta1.castShadow =true;
-	base.receiveShadow =true;
-	luzPuntual.castShadow = true;
+//
+//	renderer.shadowMapEnabled = true;
+//	abajo.castShadow =true;
+//	llanta1.castShadow =true;
+//	base.receiveShadow =true;
+//	luzPuntual.castShadow = true;
 }
 
 function loop(){
