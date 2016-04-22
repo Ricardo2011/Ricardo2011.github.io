@@ -56,6 +56,7 @@ document.body.appendChild(renderer.domElement);
 
 	renderer.shadowMapEnabled = true;
 	abajo.castShadow =true;
+	arriba.castShadow =true;
 	base.receiveShadow =true;
 	luzPuntual.castShadow = true;
 }
