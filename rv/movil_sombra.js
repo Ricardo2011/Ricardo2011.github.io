@@ -48,9 +48,9 @@ llanta2.position.x=3.5;
 step=.01;
 
 var luzPuntual=new THREE.PointLight(0xFFFFFF);
-luzPuntual.position.x=20;
-luzPuntual.position.y=20;
-luzPuntual.position.z=20;
+luzPuntual.position.x=30;
+luzPuntual.position.y=30;
+luzPuntual.position.z=30;
 
 escena=new THREE.Scene();
 escena.add(arriba);
