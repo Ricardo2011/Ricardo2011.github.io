@@ -19,20 +19,9 @@ this.add(this.sujetador);
 Tapa.prototype=new THREE.Object3D();
 
 function setup(){
- var textura1 = THREE.ImageUtils.loadTexture('http://i39.servimg.com/u/f39/16/68/03/45/810.jpg');
- var material1 = new THREE.MeshBasicMaterial({map:textura1});
- var forma1 = new THREE.BoxGeometry(6,6,1);
- var abajo = new THREE.Mesh(forma1, material1);
-
- var textura = THREE.ImageUtils.loadTexture('http://thumbs.dreamstime.com/t/sandstone-texture-10289057.jpg');
- var forma = new THREE.CylinderGeometry( 2, 2, 1, 10 );
- var material = new THREE.MeshBasicMaterial( {map: textura} );
- var llanta1 = new THREE.Mesh( forma, material );
- 
- var textura2 = THREE.ImageUtils.loadTexture('http://thumbs.dreamstime.com/t/sandstone-texture-10289057.jpg');
- var forma2 = new THREE.CylinderGeometry( 2, 2, 1, 10 );
- var material2 = new THREE.MeshBasicMaterial( {map: textura2} );
- var llanta2 = new THREE.Mesh( forma2, material2 );
+var abajo=new THREE.Mesh(new THREE.BoxGeometry(6,6,1),new THREE.MeshPhongMaterial({color:'#00cc00'}));
+var llanta1=new THREE.Mesh(new THREE.CylinderGeometry(2,2,1,10),new THREE.MeshPhongMaterial({color:'#00cc00'}));
+var llanta2=new THREE.Mesh(new THREE.CylinderGeometry(2,2,1,10),new THREE.MeshPhongMaterial({color:'#00cc00'}));
 
 var base = new THREE.Mesh(new THREE.BoxGeometry(15,10,.1), new THREE.MeshLambertMaterial({color: 0xF0D58C}));
 
@@ -47,17 +36,17 @@ llanta1.position.x=-3.5;
 llanta2.position.x=3.5;
 step=.01;
 
-//var luzPuntual=new THREE.PointLight(0xFFFFFF);
-//luzPuntual.position.x=30;
-//luzPuntual.position.y=30;
-//luzPuntual.position.z=30;
+var luzPuntual=new THREE.PointLight(0xFFFFFF);
+luzPuntual.position.x=30;
+luzPuntual.position.y=30;
+luzPuntual.position.z=30;
 
 escena=new THREE.Scene();
 escena.add(arriba);
 escena.add(abajo);
 escena.add(llanta1);
 escena.add(llanta2);
-//escena.add(luzPuntual);
+escena.add(luzPuntual);
 escena.add(base);
 
 camara=new THREE.PerspectiveCamera();
@@ -68,12 +57,12 @@ camara.position.y=5;
 renderer=new THREE.WebGLRenderer();
 renderer.setSize(window.innerHeight*.95,window.innerHeight*.95);
 document.body.appendChild(renderer.domElement);
-//
-//	renderer.shadowMapEnabled = true;
-//	abajo.castShadow =true;
-//	llanta1.castShadow =true;
-//	base.receiveShadow =true;
-//	luzPuntual.castShadow = true;
+
+	renderer.shadowMapEnabled = true;
+	abajo.castShadow =true;
+llanta1.castShadow =true;
+base.receiveShadow =true;
+luzPuntual.castShadow = true;
 }
 
 function loop(){
