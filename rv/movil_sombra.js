@@ -22,7 +22,7 @@ var llanta2=new THREE.Mesh(new THREE.CylinderGeometry(2,2,1,10),new THREE.MeshPh
 var base = new THREE.Mesh(new THREE.BoxGeometry(10,10,.1), new THREE.MeshLambertMaterial({color: 0xFF00000}));
 
 arriba=new Tapa();
-
+base position.z=-1.5
 abajo.position.z=-1;
 llanta1.rotation.z=1.57;
 llanta2.rotation.z=1.57;
