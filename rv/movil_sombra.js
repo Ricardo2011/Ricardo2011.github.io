@@ -32,7 +32,7 @@ llanta1.position.x=-3.5;
 llanta2.position.x=3.5;
 step=.01;
 
-var luzPuntual=new THREE.PointLight(0x00FFFF);
+var luzPuntual=new THREE.PointLight(0xFFFFFF);
 luzPuntual.position.x=20;
 luzPuntual.position.y=20;
 luzPuntual.position.z=20;
@@ -56,6 +56,7 @@ document.body.appendChild(renderer.domElement);
 
 	renderer.shadowMapEnabled = true;
 	abajo.castShadow =true;
+	llanta1.castShadow =true;
 	base.receiveShadow =true;
 	luzPuntual.castShadow = true;
 }
