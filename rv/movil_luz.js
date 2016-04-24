@@ -78,19 +78,25 @@ stepx=0.2;
 };
 
 if((obstaculo1.length>0 && (obstaculo1[0].distance<=5)))
-{stepy=-0.2;
+{
+cubo1.material= new  THREE.MeshBasicMaterial({color:'#ffff00'});
+stepy=-0.2;
 pelota.rotation.z=-3.14;
 stepx=0;
 };
 
 if((obstaculo4.length>0 && (obstaculo4[0].distance<=5)))
-{stepy=0;
+{
+cubo4.material= new  THREE.MeshBasicMaterial({color:'#00ffff'});
+stepy=0;
 pelota.rotation.z=1.57;
 stepx=-0.2;
 };
 
 if((obstaculo2.length>0 && (obstaculo2[0].distance<=5))&&(obstaculo3[0].distance>=5))
-{stepy=0.2;
+{
+cubo2.material= new  THREE.MeshBasicMaterial({color:'#ffffff'});
+stepy=0.2;
 pelota.rotation.z=0;
 stepx=0;
 };
