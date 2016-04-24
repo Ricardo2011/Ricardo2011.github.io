@@ -70,7 +70,7 @@ escena.add(cubo3);
 escena.add(cubo4);
 escena.add(pelota);
 escena.add(camara);
-//escena.add(luzconica)
+escena.add(luzconica)
 
 renderer=new THREE.WebGLRenderer();
 renderer.setSize(window.innerHeight*.95,window.innerHeight*.95);
