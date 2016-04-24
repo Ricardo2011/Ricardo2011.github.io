@@ -52,7 +52,7 @@ var luzconica = new THREE.SpotLight( 0xffffff );
 luzconica.position.set( 0,-10,0);
 luzconica.castShadow = true;
 luzconica.intensity = 3;
-luzconica.angle = 1;
+luzconica.angle = 0.5;
 //luzconica.shadow.mapSize.width = 5;
 //luzconica.shadow.mapSize.height = 5;
 //luzconica.shadow.camera.near = 50;
