@@ -36,6 +36,12 @@ step=.01;
 //luzPuntual.position.z=20;
 var luzconica = new THREE.SpotLight( 0xffffff );
 luzconica.position.set( 20, 20, 20 );
+luzconica.castShadow = true;
+//luzconica.shadow.mapSize.width = 10;
+//luzconica.shadow.mapSize.height = 10;
+//luzconica.shadow.camera.near = 50;
+//luzconica.shadow.camera.far = 40;
+//luzconica.shadow.camera.fov = 30;
 
 escena=new THREE.Scene();
 escena.add(arriba);
