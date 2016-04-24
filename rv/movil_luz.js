@@ -82,6 +82,7 @@ obstaculo4=raycaster4.intersectObject(cubo4);
 if((obstaculo3.length>0 && (obstaculo3[0].distance<=5)))
 {
 cubo3.material= new  THREE.MeshBasicMaterial({color:'#ff00ff'});
+luzconica.target = pelota;
 stepy=0;
 pelota.rotation.z=-1.57;
 stepx=0.2;
@@ -90,6 +91,7 @@ stepx=0.2;
 if((obstaculo1.length>0 && (obstaculo1[0].distance<=5)))
 {
 cubo1.material= new  THREE.MeshBasicMaterial({color:'#ffff00'});
+luzconica.target = pelota;
 stepy=-0.2;
 pelota.rotation.z=-3.14;
 stepx=0;
