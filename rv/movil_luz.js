@@ -47,6 +47,11 @@ raycaster2=new THREE.Raycaster(pelota.position,new THREE.Vector3(-1,0,0));
 raycaster3=new THREE.Raycaster(pelota.position,new THREE.Vector3(0,1,0));
 raycaster4=new THREE.Raycaster(pelota.position,new THREE.Vector3(0,-1,0));
 
+//Creo la luz conica-----
+var luzconica = new THREE.SpotLight( 0xffffff );
+luzconica.position.set( raycaster3 );
+//------------
+
 escena=new THREE.Scene();
 escena.add(cubo1);
 escena.add(cubo2);
@@ -116,6 +121,7 @@ requestAnimationFrame(loop);
 var cubo1,cubo2,cubo3,cubo4,pelota,escena,camara,renderer;
 var raycaster1,raycaster2,raycaster3,raycaster4,step;
 var obstaculo1,obstaculo2,obstaculo3,obstaculo4;
+var luzconica;
 
 setup();
 loop();
