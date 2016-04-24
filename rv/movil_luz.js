@@ -55,7 +55,7 @@ luzconica.target = pelota;
 //luzconica.position.set( -5,-5,0);
 //luzconica.castShadow = true;
 luzconica.intensity = 3;
-luzconica.angle = 0.1;
+//luzconica.angle = 0.1;
 //luzconica.shadow.mapSize.width = 5;
 //luzconica.shadow.mapSize.height = 5;
 //luzconica.shadow.camera.near = 50;
