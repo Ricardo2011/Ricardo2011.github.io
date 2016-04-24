@@ -39,7 +39,7 @@ luzconica.position.set( 40, 20, 40 );
 luzconica.castShadow = true;
 luzconica.shadow.mapSize.width = 30;
 luzconica.shadow.mapSize.height = 30;
-luzconica.intensity=1;
+luzconica.intensity=5;
 
 //luzconica.shadow.camera.near = 50;
 //luzconica.shadow.camera.far = 40;
