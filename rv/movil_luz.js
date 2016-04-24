@@ -49,10 +49,13 @@ raycaster4=new THREE.Raycaster(pelota.position,new THREE.Vector3(0,-1,0));
 
 //Creo la luz conica-----
 var luzconica = new THREE.SpotLight( 0xffffff );
-luzconica.position.set( -5,-5,0);
+raycaster.add(luzconica);
+luzconica.position.set(0,0,1);
+luzconica.target = raycaster;
+//luzconica.position.set( -5,-5,0);
 //luzconica.castShadow = true;
-luzconica.intensity = 3;
-luzconica.angle = 0.1;
+//luzconica.intensity = 3;
+//luzconica.angle = 0.1;
 //luzconica.shadow.mapSize.width = 5;
 //luzconica.shadow.mapSize.height = 5;
 //luzconica.shadow.camera.near = 50;
