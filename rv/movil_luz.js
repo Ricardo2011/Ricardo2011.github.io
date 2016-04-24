@@ -51,7 +51,7 @@ raycaster4=new THREE.Raycaster(pelota.position,new THREE.Vector3(0,-1,0));
 var luzconica = new THREE.SpotLight( 0xffffff );
 pelota.add(luzconica);
 luzconica.position.set(-5,-5,0);
-//luzconica.target = pelota;
+luzconica.target = pelota;
 //luzconica.position.set( -5,-5,0);
 luzconica.intensity = 1;
 //------------
@@ -90,7 +90,7 @@ stepx=0.2;
 if((obstaculo1.length>0 && (obstaculo1[0].distance<=5)))
 {
 cubo1.material= new  THREE.MeshBasicMaterial({color:'#ffff00'});
-tepy=-0.2;
+stepy=-0.2;
 pelota.rotation.z=-3.14;
 stepx=0;
 };
