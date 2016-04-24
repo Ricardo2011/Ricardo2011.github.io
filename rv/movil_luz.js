@@ -70,7 +70,9 @@ obstaculo3=raycaster3.intersectObject(cubo3);
 obstaculo4=raycaster4.intersectObject(cubo4);
 
 if((obstaculo3.length>0 && (obstaculo3[0].distance<=5)))
-{stepy=0;
+{
+cubo3.material= new  THREE.MeshBasicMaterial({color:'#ff00ff'}
+stepy=0;
 pelota.rotation.z=-1.57;
 stepx=0.2;
 };
