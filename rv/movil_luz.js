@@ -51,6 +51,8 @@ raycaster4=new THREE.Raycaster(pelota.position,new THREE.Vector3(0,-1,0));
 var luzconica = new THREE.SpotLight( 0xffffff );
 luzconica.position.set( raycaster3 );
 luzconica.castShadow = true;
+spotLight.shadow.mapSize.width = 10;
+spotLight.shadow.mapSize.height = 10;
 //------------
 
 escena=new THREE.Scene();
