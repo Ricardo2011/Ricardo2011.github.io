@@ -51,11 +51,12 @@ raycaster4=new THREE.Raycaster(pelota.position,new THREE.Vector3(0,-1,0));
 var luzconica = new THREE.SpotLight( 0xffffff );
 luzconica.position.set( raycaster3 );
 luzconica.castShadow = true;
-luzconica.shadow.mapSize.width = 10;
-luzconica.shadow.mapSize.height = 10;
-luzconica.shadow.camera.near = 50;
-luzconica.shadow.camera.far = 40;
-luzconica.shadow.camera.fov = 30;
+luzconica.intensity = 3;
+//luzconica.shadow.mapSize.width = 10;
+//luzconica.shadow.mapSize.height = 10;
+//luzconica.shadow.camera.near = 50;
+//luzconica.shadow.camera.far = 40;
+//luzconica.shadow.camera.fov = 30;
 //------------
 
 escena=new THREE.Scene();
