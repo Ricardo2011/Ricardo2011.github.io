@@ -30,17 +30,19 @@ llanta1.position.x=-3.5;
 llanta2.position.x=3.5;
 step=.01;
 
-var luzPuntual=new THREE.PointLight(0xcc00cc);
-luzPuntual.position.x=20;
-luzPuntual.position.y=20;
-luzPuntual.position.z=20;
+//var luzPuntual=new THREE.PointLight(0xcc00cc);
+//luzPuntual.position.x=20;
+//luzPuntual.position.y=20;
+//luzPuntual.position.z=20;
+var luzconica = new THREE.SpotLight( 0xffffff );
+luzconica.position.set( 20, 20, 20 );
 
 escena=new THREE.Scene();
 escena.add(arriba);
 escena.add(abajo);
 escena.add(llanta1);
 escena.add(llanta2);
-escena.add(luzPuntual);
+escena.add(luzconica);
 
 camara=new THREE.PerspectiveCamera();
 camara.position.z=20;
