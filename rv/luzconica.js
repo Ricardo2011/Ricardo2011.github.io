@@ -35,7 +35,7 @@ step=.01;
 //luzPuntual.position.y=20;
 //luzPuntual.position.z=20;
 var luzconica = new THREE.SpotLight( 0xffffff );
-luzconica.position.set( 40, 20, 40 );
+luzconica.position.set( 90, 90, 90 );
 luzconica.castShadow = true;
 luzconica.shadow.mapSize.width = 30;
 luzconica.shadow.mapSize.height = 30;
