@@ -1,6 +1,6 @@
 function setup(){
 THREE.ImageUtils.crossOrigin='';
-var textura = THREE.ImageUtils.loadTexture('mosaico.jpg');
+var textura = THREE.ImageUtils.loadTexture('http://thumbs.dreamstime.com/t/tablero-de-ajedrez-vac%C3%ADo-en-el-fondo-blanco-28841334.jpg');
 var material=new THREE.MeshBasicMaterial({map:textura});
 var forma=new THREE.BoxGeometry(1,1,0.5);
 malla=new THREE.Mesh(forma,material);
