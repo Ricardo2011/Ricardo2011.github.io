@@ -7,9 +7,9 @@ cubo4=new THREE.Mesh(new THREE.BoxGeometry(60,0.5,3),new  THREE.MeshBasicMateria
 
 
 cubo1.position.x=27;
-cubo1.position.y=0;
+cubo1.position.y=-10;
 cubo2.position.x=-27;
-cubo3.position.y=-10;
+cubo3.position.y=-70;
 cubo4.position.y=27;
 //
 
