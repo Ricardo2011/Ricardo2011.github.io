@@ -1,5 +1,5 @@
 function setup(){
-cubo1=new THREE.Mesh(new THREE.BoxGeometry(0.5,60,5),new THREE.MeshLBasicMaterial({color:'#ffff00'}));
+cubo1=new THREE.Mesh(new THREE.BoxGeometry(0.5,60,5),new THREE.MeshBasicMaterial({color:'#ffff00'}));
 cubo2=new THREE.Mesh(new THREE.BoxGeometry(1,40,5),new THREE.MeshBasicMaterial({color:'#ffff00'}));
 
 cubo3=new THREE.Mesh(new THREE.BoxGeometry(40,1,5),new  THREE.MeshBasicMaterial({color:'#ffff00'}));
