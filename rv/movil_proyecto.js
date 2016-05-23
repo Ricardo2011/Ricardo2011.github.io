@@ -1,9 +1,9 @@
 function setup(){
-cubo1=new THREE.Mesh(new THREE.BoxGeometry(1,40,5),new THREE.MeshLambertMaterial({color:'#ffff00'}));
-cubo2=new THREE.Mesh(new THREE.BoxGeometry(1,40,5),new THREE.MeshLambertMaterial({color:'#ffff00'}));
+cubo1=new THREE.Mesh(new THREE.BoxGeometry(0.5,60,5),new THREE.MeshLBasicMaterial({color:'#ffff00'}));
+cubo2=new THREE.Mesh(new THREE.BoxGeometry(1,40,5),new THREE.MeshBasicMaterial({color:'#ffff00'}));
 
-cubo3=new THREE.Mesh(new THREE.BoxGeometry(40,1,5),new  THREE.MeshLambertMaterial({color:'#ffff00'}));
-cubo4=new THREE.Mesh(new THREE.BoxGeometry(40,1,5),new  THREE.MeshLambertMaterial({color:'#ffff00'}));
+cubo3=new THREE.Mesh(new THREE.BoxGeometry(40,1,5),new  THREE.MeshBasicMaterial({color:'#ffff00'}));
+cubo4=new THREE.Mesh(new THREE.BoxGeometry(40,1,5),new  THREE.MeshBasictMaterial({color:'#ffff00'}));
 
 var canon=new THREE.Mesh(new THREE.BoxGeometry(4,4,1));
 var sujetador=new THREE.Mesh(new THREE.BoxGeometry(1,6,1));
