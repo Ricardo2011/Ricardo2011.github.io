@@ -6,15 +6,21 @@ cubo3=new THREE.Mesh(new THREE.BoxGeometry(60,0.5,3),new  THREE.MeshBasicMateria
 cubo4=new THREE.Mesh(new THREE.BoxGeometry(60,0.5,3),new  THREE.MeshBasicMaterial({color:'#ffff00'}));
 
 pared1= new THREE.Mesh(new THREE.BoxGeometry(0.5,30,3),new  THREE.MeshBasicMaterial({color:'#ffff00'}));
-pared2= new THREE.Mesh(new THREE.BoxGeometry(20,0.5,3),new  THREE.MeshBasicMaterial({color:'#ffff00'}));
+pared2= new THREE.Mesh(new THREE.BoxGeometry(15,0.5,3),new  THREE.MeshBasicMaterial({color:'#ffff00'}));
 pared3= new THREE.Mesh(new THREE.BoxGeometry(0.5,20,3),new  THREE.MeshBasicMaterial({color:'#ffff00'}));
+pared4= new THREE.Mesh(new THREE.BoxGeometry(0.5,20,3),new  THREE.MeshBasicMaterial({color:'#ffff00'}));
+pared5= new THREE.Mesh(new THREE.BoxGeometry(0.5,20,3),new  THREE.MeshBasicMaterial({color:'#ffff00'}));
 
 pared1.position.x=-15;
 pared1.position.y=-20;
 pared2.position.x=-20;
 pared2.position.y=15;
 pared3.position.x=0;
-pared3.position.y=-0;
+pared3.position.y=0;
+pared4.position.x=15;
+pared4.position.y=10;
+pared5.position.x=15;
+pared5.position.y=-10;
 
 cubo1.position.x=27;
 cubo1.position.y=10
@@ -79,6 +85,8 @@ escena.add(cubo4);
 escena.add(pared1);
 escena.add(pared2);
 escena.add(pared3);
+escena.add(pared4);
+escena.add(pared5);
 escena.add(pelota);
 escena.add(camara);
 escena.add(luzconica)
