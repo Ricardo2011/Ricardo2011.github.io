@@ -7,7 +7,7 @@ cubo4=new THREE.Mesh(new THREE.BoxGeometry(60,0.5,3),new  THREE.MeshBasicMateria
 
 new pared1= new THREE.Mesh(new THREE.BoxGeometry(0.5,50,3),new  THREE.MeshBasicMaterial({color:'#ffff00'}));
 
-pared1.position.x=-20
+pared1.position.x=-20;
 
 cubo1.position.x=27;
 cubo1.position.y=-8;
@@ -69,6 +69,7 @@ escena.add(cubo1);
 escena.add(cubo2);
 escena.add(cubo3);
 escena.add(cubo4);
+escena.add(pared1);
 escena.add(pelota);
 escena.add(camara);
 escena.add(luzconica)
