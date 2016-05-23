@@ -21,7 +21,7 @@ pared2.position.y=10;
 pared3.position.x=0;
 pared3.position.y=0;
 pared4.position.x=15;
-pared4.position.y=20;
+pared4.position.y=10;
 pared5.position.x=15;
 pared5.position.y=-20;
 
