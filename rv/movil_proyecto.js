@@ -7,7 +7,7 @@ cubo4=new THREE.Mesh(new THREE.BoxGeometry(60,0.5,3),new  THREE.MeshBasicMateria
 
 pared1= new THREE.Mesh(new THREE.BoxGeometry(0.5,50,3),new  THREE.MeshBasicMaterial({color:'#ffff00'}));
 
-pared1.position.x=-20;
+pared1.position.x=-17;
 
 cubo1.position.x=27;
 cubo1.position.y=-8;
