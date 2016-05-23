@@ -8,7 +8,7 @@ cubo4=new THREE.Mesh(new THREE.BoxGeometry(60,0.5,3),new  THREE.MeshBasicMateria
 pared1= new THREE.Mesh(new THREE.BoxGeometry(0.5,50,3),new  THREE.MeshBasicMaterial({color:'#ffff00'}));
 
 pared1.position.x=-15;
-
+pared1.position.y=-10;
 cubo1.position.x=27;
 cubo1.position.y=-8;
 cubo2.position.x=-27;
@@ -44,7 +44,7 @@ THREE.GeometryUtils.merge(forma,llanta2);
 
 pelota=new THREE.Mesh(forma,new THREE.MeshNormalMaterial());
 
-pelota.position.x=-20;
+pelota.position.x=-22;
 pelota.position.y=-22;
 //+++++++++++++++++++++++++++++
 camara=new THREE.PerspectiveCamera();
