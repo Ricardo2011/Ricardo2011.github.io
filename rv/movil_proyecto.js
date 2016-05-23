@@ -5,7 +5,7 @@ cubo2=new THREE.Mesh(new THREE.BoxGeometry(0.5,60,3),new THREE.MeshBasicMaterial
 cubo3=new THREE.Mesh(new THREE.BoxGeometry(60,0.5,3),new  THREE.MeshBasicMaterial({color:'#ffff00'}));
 cubo4=new THREE.Mesh(new THREE.BoxGeometry(60,0.5,3),new  THREE.MeshBasicMaterial({color:'#ffff00'}));
 
-new pared1= new THREE.Mesh(new THREE.BoxGeometry(0.5,50,3),new  THREE.MeshBasicMaterial({color:'#ffff00'}));
+pared1= new THREE.Mesh(new THREE.BoxGeometry(0.5,50,3),new  THREE.MeshBasicMaterial({color:'#ffff00'}));
 
 pared1.position.x=-20;
 
@@ -86,7 +86,7 @@ renderer.render(escena,camara);
 requestAnimationFrame(loop);
 }
 
-var cubo1,cubo2,cubo3,cubo4,pelota,escena,camara,renderer;
+var pared1,cubo1,cubo2,cubo3,cubo4,pelota,escena,camara,renderer;
 var raycaster1,raycaster2,raycaster3,raycaster4,step;
 var obstaculo1,obstaculo2,obstaculo3,obstaculo4;
 var luzconica;
