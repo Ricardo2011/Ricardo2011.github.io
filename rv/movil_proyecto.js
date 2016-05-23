@@ -17,7 +17,7 @@ pared3.position.x=15;
 pared3.position.y=-10;
 
 cubo1.position.x=27;
-cubo1.position.y=-8;
+cubo1.position.y=8;
 cubo2.position.x=-27;
 cubo3.position.y=-27;
 cubo4.position.y=27;
