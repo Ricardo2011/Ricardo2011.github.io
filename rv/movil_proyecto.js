@@ -11,8 +11,8 @@ cubo1.position.y=-8;
 cubo2.position.x=-27;
 cubo3.position.y=-27;
 cubo4.position.y=27;
-//
-
+//+++++++++++++++++++++++
+//MOVIL////
 var canon=new THREE.Mesh(new THREE.BoxGeometry(4,4,1));
 var sujetador=new THREE.Mesh(new THREE.BoxGeometry(1,6,1));
 
@@ -42,8 +42,8 @@ THREE.GeometryUtils.merge(forma,llanta2);
 pelota=new THREE.Mesh(forma,new THREE.MeshNormalMaterial());
 
 pelota.position.x=-20;
-pelota.position.y=-25
-
+pelota.position.y=-22;
+//+++++++++++++++++++++++++++++
 camara=new THREE.PerspectiveCamera();
 camara.position.z=60;
 
