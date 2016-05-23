@@ -8,14 +8,14 @@ cubo2=new THREE.Mesh(new THREE.BoxGeometry(0.5,60,3),new THREE.MeshBasicMaterial
 cubo3=new THREE.Mesh(new THREE.BoxGeometry(60,0.5,3),new  THREE.MeshBasicMaterial({map:textura}));
 cubo4=new THREE.Mesh(new THREE.BoxGeometry(60,0.5,3),new  THREE.MeshBasicMaterial({map:textura}));
 
-pared1= new THREE.Mesh(new THREE.BoxGeometry(0.5,20,3),new  THREE.MeshBasicMaterial({map:textura}));
+pared1= new THREE.Mesh(new THREE.BoxGeometry(0.5,15,3),new  THREE.MeshBasicMaterial({map:textura}));
 pared2= new THREE.Mesh(new THREE.BoxGeometry(15,0.5,3),new  THREE.MeshBasicMaterial({map:textura}));
 pared3= new THREE.Mesh(new THREE.BoxGeometry(0.5,25,3),new  THREE.MeshBasicMaterial({map:textura}));
 pared4= new THREE.Mesh(new THREE.BoxGeometry(0.5,15,3),new  THREE.MeshBasicMaterial({map:textura}));
 pared5= new THREE.Mesh(new THREE.BoxGeometry(0.5,15,3),new  THREE.MeshBasicMaterial({map:textura}));
 
 pared1.position.x=-10;
-pared1.position.y=-20;
+pared1.position.y=-10;
 pared2.position.x=-10;
 pared2.position.y=10;
 pared3.position.x=0;
