@@ -78,6 +78,7 @@ escena.add(cubo3);
 escena.add(cubo4);
 escena.add(pared1);
 escena.add(pared2);
+escena.add(pared3);
 escena.add(pelota);
 escena.add(camara);
 escena.add(luzconica)
