@@ -1,14 +1,17 @@
 function setup(){
+//Escenario
 cubo1=new THREE.Mesh(new THREE.BoxGeometry(0.5,60,3),new THREE.MeshBasicMaterial({color:'#ffff00'}));
 cubo2=new THREE.Mesh(new THREE.BoxGeometry(0.5,60,3),new THREE.MeshBasicMaterial({color:'#ffff00'}));
 
-cubo1.position.x = 100;
 
 cubo3=new THREE.Mesh(new THREE.BoxGeometry(60,0.5,3),new  THREE.MeshBasicMaterial({color:'#ffff00'}));
 cubo4=new THREE.Mesh(new THREE.BoxGeometry(60,0.5,3),new  THREE.MeshBasicMaterial({color:'#ffff00'}));
 
-
-
+cubo1.position.x=50;
+cubo2.position.x=0;
+cubo3.position.y=0;
+cubo4.position.y=50
+//
 
 var canon=new THREE.Mesh(new THREE.BoxGeometry(4,4,1));
 var sujetador=new THREE.Mesh(new THREE.BoxGeometry(1,6,1));
@@ -38,11 +41,11 @@ THREE.GeometryUtils.merge(forma,llanta2);
 
 pelota=new THREE.Mesh(forma,new THREE.MeshNormalMaterial());
 
-cubo1.position.x=20;
-cubo2.position.x=-20;
+//cubo1.position.x=20;
+//cubo2.position.x=-20;
 
-cubo3.position.y=20;
-cubo4.position.y=-20;
+//cubo3.position.y=20;
+//cubo4.position.y=-20;
 
 camara=new THREE.PerspectiveCamera();
 camara.position.z=60;
