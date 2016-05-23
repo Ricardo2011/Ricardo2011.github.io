@@ -43,7 +43,7 @@ pelota=new THREE.Mesh(forma,new THREE.MeshNormalMaterial());
 
 pelota.position.x=-20;
 pelota.position.y=-22;
-pelota.rotatio.x=5;
+pelota.rotation.x=5;
 //+++++++++++++++++++++++++++++
 camara=new THREE.PerspectiveCamera();
 camara.position.z=60;
