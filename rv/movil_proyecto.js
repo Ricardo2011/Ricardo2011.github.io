@@ -7,10 +7,10 @@ cubo2=new THREE.Mesh(new THREE.BoxGeometry(0.5,60,3),new THREE.MeshBasicMaterial
 cubo3=new THREE.Mesh(new THREE.BoxGeometry(60,0.5,3),new  THREE.MeshBasicMaterial({color:'#ffff00'}));
 cubo4=new THREE.Mesh(new THREE.BoxGeometry(60,0.5,3),new  THREE.MeshBasicMaterial({color:'#ffff00'}));
 
-cubo1.position.x=50;
-cubo2.position.x=0;
-cubo3.position.y=0;
-cubo4.position.y=50
+cubo1.position.x=30;
+cubo2.position.x=-30;
+cubo3.position.y=-30;
+cubo4.position.y=30
 //
 
 var canon=new THREE.Mesh(new THREE.BoxGeometry(4,4,1));
